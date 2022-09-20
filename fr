@@ -1,0 +1,36 @@
+local Mercury = loadstring(game:HttpGet("https://raw.githubusercontent.com/deeeity/mercury-lib/master/src.lua"))()
+
+local b = Mercury:Create{
+    Name = "ayo",
+    Size = UDim2.fromOffset(600, 400),
+    Theme = Mercury.Themes.Dark,
+    Link = "alex e gei"
+}
+
+local c = b:Tab{
+	Name = "among us",
+	Icon = "rbxassetid://8569322835"
+}
+
+getgenv().d = false
+
+local e = game.Players.LocalPlayer.Character.Energy.Value
+
+c:Toggle{
+	Name = "inf energy",
+	StartingState = false,
+	Description = nil,
+	Callback = function(state)
+	    getgenv().d = state
+	    
+	    while getgenv().d do
+	        game.Players.LocalPlayer.Character.Energy.Changed:connect(function()
+                game.Players.LocalPlayer.Character.Energy.Value = Value1
+            end)
+        end
+    end
+}
+
+function f()
+  
+end
