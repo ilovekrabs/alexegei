@@ -315,7 +315,7 @@ function notify:made_by_rizz_god_5961()
 		cooldownbackground.Position = UDim2.new(0, 0,1, 0)
 
 
-		cooldownbackground.Size = UDim2.new(0, 0, 0, 5)
+		cooldownbackground.Size = UDim2.new(0, 0, 0, 3)
 
 
 		notification:TweenSize(
@@ -342,7 +342,7 @@ function notify:made_by_rizz_god_5961()
 				cooldownbackground:TweenSize(
 
 
-					UDim2.new(0, 170, 0, 5),
+					UDim2.new(0, 170, 0, 3),
 
 
 					Enum.EasingDirection.InOut,
