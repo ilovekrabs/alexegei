@@ -101,7 +101,9 @@ local Slider = Tab:Slider({
 ```
 
 #### Dropdown
-- test
+- Currently unavailable since im bad at coding xD
+
+## --------------------------
 
 ## Notification Library
 
