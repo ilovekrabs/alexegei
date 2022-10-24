@@ -226,7 +226,7 @@ function Library:New(options)
 		GUI["b"]["Size"] = UDim2.new(1, -12, 1, -42);
 		GUI["b"]["Position"] = UDim2.new(0, 6, 0, 37);
 		GUI["b"]["Name"] = [[navigation]];
-		GUI["b"]["ClipsDescendants"] = true
+		GUI["b"]["ClipsDescendants"] = false
 
 		-- StarterGui.mainUI.mainframe.navigation.tabholderbg
 		GUI["c"] = Instance.new("Frame", GUI["b"]);
