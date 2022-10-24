@@ -234,7 +234,7 @@ function Library:New(options)
 		GUI["c"]["BackgroundColor3"] = Color3.fromRGB(48, 48, 48);
 		GUI["c"]["AnchorPoint"] = Vector2.new(0, 1);
 		GUI["c"]["Size"] = UDim2.new(0, 130, 1, 7);
-		GUI["c"]["Position"] = UDim2.new(0, -6, 1, 6);
+		GUI["c"]["Position"] = UDim2.new(0, 0, 1, 0);
 		GUI["c"]["Name"] = [[tabholderbg]];
 		GUI["c"]["ClipsDescendants"] = true
 
