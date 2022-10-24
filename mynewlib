@@ -171,8 +171,11 @@ function Library:New(options)
 			if input.UserInputType == Enum.UserInputType.MouseButton1 then
 				if GUI.CloseBtnHover then
 					Library:tween(GUI["9"], {ImageColor3 = Color3.fromRGB(255, 213, 0)})
-					Library:tween(GUI["2"], {Size = UDim2.new(0,0,0,0)})
 					Library:tween(GUI["jkjk"], {Color = Color3.fromRGB(255, 204, 0)})
+					wait(0.05)
+					Library:tween(GUI["2"], {Size = UDim2.new(0,0,0,0)})
+					wait(0.2)
+					GUI["1"]:Destroy()
 				end					
 			end
 
