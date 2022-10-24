@@ -56,36 +56,13 @@ function Library:New(options)
 		GUI["2"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
 		GUI["2"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
 		GUI["2"]["Size"] = UDim2.new(0,0,0,0);
-		GUI["2"]["ClipsDescendants"] = false;
+		GUI["2"]["ClipsDescendants"] = true;
 		GUI["2"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 		GUI["2"]["Name"] = [[mainframe]];
 
 		-- StarterGui.mainUI.mainframe.UICorner
 		GUI["a"] = Instance.new("UICorner", GUI["2"]);
 		GUI["a"]["CornerRadius"] = UDim.new(0, 6);
-
-		-- StarterGui.mainUI.mainframe.DropShadowHolder
-		GUI["7a"] = Instance.new("Frame", GUI["2"]);
-		GUI["7a"]["ZIndex"] = 0;
-		GUI["7a"]["BorderSizePixel"] = 0;
-		GUI["7a"]["BackgroundTransparency"] = 1;
-		GUI["7a"]["Size"] = UDim2.new(1, 0, 1, 0);
-		GUI["7a"]["Name"] = [[DropShadowHolder]];
-
-		-- StarterGui.mainUI.mainframe.DropShadowHolder.DropShadow
-		GUI["7b"] = Instance.new("ImageLabel", GUI["7a"]);
-		GUI["7b"]["ZIndex"] = 0;
-		GUI["7b"]["BorderSizePixel"] = 0;
-		GUI["7b"]["SliceCenter"] = Rect.new(49, 49, 450, 450);
-		GUI["7b"]["ScaleType"] = Enum.ScaleType.Slice;
-		GUI["7b"]["ImageColor3"] = Color3.fromRGB(0, 0, 0);
-		GUI["7b"]["ImageTransparency"] = 0.5;
-		GUI["7b"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-		GUI["7b"]["Image"] = [[rbxassetid://6014261993]];
-		GUI["7b"]["Size"] = UDim2.new(1, 47, 1, 47);
-		GUI["7b"]["Name"] = [[DropShadow]];
-		GUI["7b"]["BackgroundTransparency"] = 1;
-		GUI["7b"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 	end
 
 	do --: Topbar
@@ -96,7 +73,7 @@ function Library:New(options)
 		GUI["3"]["BackgroundColor3"] = Color3.fromRGB(54, 54, 54);
 		GUI["3"]["Size"] = UDim2.new(1, 0, 0, 35);
 		GUI["3"]["Name"] = [[topbar]];
-		GUI["3"]["ClipsDescendants"] = true
+		GUI["3"]["ClipsDescendants"] = false
 
 		-- StarterGui.mainUI.mainframe.topbar.UICorner
 		GUI["4"] = Instance.new("UICorner", GUI["3"]);
@@ -236,7 +213,7 @@ function Library:New(options)
 		GUI["c"]["Size"] = UDim2.new(0, 130, 1, 7);
 		GUI["c"]["Position"] = UDim2.new(0, 0, 1, 0);
 		GUI["c"]["Name"] = [[tabholderbg]];
-		GUI["c"]["ClipsDescendants"] = true
+		GUI["c"]["ClipsDescendants"] = false
 
 		-- StarterGui.mainUI.mainframe.navigation.tabholder.UICorner
 		GUI["cuicorner"] = Instance.new("UICorner", GUI["2"]);
@@ -407,7 +384,7 @@ function Library:New(options)
 			Tab["1f"]["Name"] = options.Title..[[ ContentContainer]];
 			Tab["1f"]["SelectionGroup"] = false;
 			Tab["1f"]["Visible"] = false
-			Tab["1f"]["ClipsDescendants"] = true
+			Tab["1f"]["ClipsDescendants"] = false
 
 			-- StarterGui.mainUI.mainframe.navigation.ContentContainer.UIPadding
 			Tab["20"] = Instance.new("UIPadding", Tab["1f"]);
