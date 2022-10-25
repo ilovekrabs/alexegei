@@ -383,7 +383,7 @@ function Library:New(options)
 			Tab["1f"]["Name"] = options.Title..[[ ContentContainer]];
 			Tab["1f"]["SelectionGroup"] = false;
 			Tab["1f"]["Visible"] = false
-			Tab["1f"]["CanvasSize"] = UDim2.fromOffset(0,100000)
+			Tab["1f"]["CanvasSize"] = UDim2.fromOffset(0,10000)
 			
 			-- StarterGui.mainUI.mainframe.navigation.ContentContainer.UIPadding
 			Tab["20"] = Instance.new("UIPadding", Tab["1f"]);
