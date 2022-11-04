@@ -204,6 +204,7 @@ function Library:New(options)
 				if GUI.CloseBtnHover then
 					Library:tween(GUI["9"], {ImageColor3 = Color3.fromRGB(201, 168, 0)})
 					Library:tween(GUI["jkjk"], {Color = Color3.fromRGB(125, 102, 0)})
+					GUI["1"]:Destroy()
 				end					
 			end
 
