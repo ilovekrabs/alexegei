@@ -69,7 +69,7 @@ function Library:New(options)
 		uis.InputBegan:Connect(function(input, gpe)
 		    if gpe then return end
 		    
-		    if input.KeyCode == options.ToggleUI and GUI.ToggleUIKeybind then
+		    if input.KeyCode == options.ToggleUI and GUI[ToggleUIKeybind] then
 		    
 		        GUI.ToggleUIKeybind = not GUI.ToggleUIKeybind
 			
