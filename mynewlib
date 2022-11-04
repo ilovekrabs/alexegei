@@ -75,8 +75,10 @@ function Library:New(options)
 			
 			if GUI.ToggleUIKeybind then
 			   Library:tween(GUI["2"], {Size = UDim2.new(0,0,0,0)})
+			   task.wait(0.1)
 			elseif GUI.ToggleUIKeybind == false then
 			   Library:tween(GUI["2"], {Size = options.Size})
+			   task.wait(0.1)
 			end
 			
 		    end
