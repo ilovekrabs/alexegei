@@ -34,7 +34,7 @@ function Library:New(options)
 
 	options = Library:validate({
 		Title = "UI Library",
-		ToggleUI = Enum.KeyCode.V,
+		ToggleUI = V,
 		Size = UDim2.fromOffset(450,350)
 	}, options or {})
 
@@ -69,7 +69,7 @@ function Library:New(options)
 		uis.InputBegan:Connect(function(input, gpe)
 		    if gpe then return end
 		    
-		    if input.KeyCode == options.ToggleUI and GUI.ToggleUIKeybind then
+		    if input.KeyCode == Enum.KeyCode[options.ToggleUI] and GUI.ToggleUIKeybind then
 		    
 		        GUI.ToggleUIKeybind = not GUI.ToggleUIKeybind
 			
@@ -124,7 +124,7 @@ function Library:New(options)
 		GUI["7"]["TextColor3"] = Color3.fromRGB(235, 196, 0);
 		GUI["7"]["AnchorPoint"] = Vector2.new(0, 0.5);
 		GUI["7"]["Size"] = UDim2.new(0.5, 0, 1, -15);
-		GUI["7"]["Text"] = options.Title.." [Toggle UI with options.ToggleUI.."]";
+		GUI["7"]["Text"] = options.Title.." [Toggle UI with "..options.ToggleUI.."]";
 		GUI["7"]["Name"] = [[title]];
 		GUI["7"]["Font"] = Enum.Font.Ubuntu;
 		GUI["7"]["BackgroundTransparency"] = 1;
