@@ -1,3 +1,15 @@
+for i, v in pairs(game.CoreGui:GetChildren()) do
+   if v:IsA("ScreenGui") then
+      if v.Name == "mainUI" then
+      	 if v:WaitForChild("mainframe") then
+	    game:service'TweenService':Create(v.mainframe, TweenInfo.new(0.2), {Size = UDim2.new(0,0,0,0)}):Play()
+	    wait(0.2)
+	    v:Destroy()
+	 end
+      end
+   end
+end
+
 --: Services
 
 local players = game:GetService("Players")
@@ -34,7 +46,7 @@ function Library:New(options)
 
 	options = Library:validate({
 		Title = "UI Library",
-		ToggleUI = Enum.KeyCode.V,
+		ToggleUI = Enum.KeyCode.RightShift,
 		Size = UDim2.fromOffset(450,350)
 	}, options or {})
 
