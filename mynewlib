@@ -90,9 +90,8 @@ function Library:New(options)
 			   wait(0.2)
 			   GUI["1"].Enabled = false
 			elseif GUI.ToggleUIKeybind == false then
-			   Library:tween(GUI["2"], {Size = options.Size})
-			   wait(0.2)
 			   GUI["1"].Enabled = true
+			   Library:tween(GUI["2"], {Size = options.Size})
 			end
 			
 		    end
