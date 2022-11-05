@@ -10,8 +10,6 @@ for i, v in pairs(game.CoreGui:GetChildren()) do
    end
 end
 
-wait(1)
-
 --: Services
 
 local players = game:GetService("Players")
@@ -1526,5 +1524,7 @@ function Library:New(options)
 	
 	return GUI
 end
+
+wait(1)
 
 return Library
