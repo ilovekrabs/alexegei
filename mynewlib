@@ -36,10 +36,6 @@ function Library:validate(defaults, options)
 	return options
 end
 
-function Library:darken(color, amount)
-    return Color3.fromRGB(color.r - amount, color.g - amount, color.b - amount)
-end
-
 function Library:tween(object, goal, callback)
 	local tween = tweenService:Create(object, tweenInfo, goal)
 	tween.Completed:Connect(callback or function() end)
@@ -881,8 +877,7 @@ function Library:New(options)
 
 		function Tab:Label(options)
 			options = Library:validate({
-				Message = "I love labels.",
-				Color = Color3.fromRGB(235, 196, 0)
+				Message = "I love labels."
 			}, options or {})
 
 			local Label = {}
@@ -891,14 +886,14 @@ function Library:New(options)
 			do
 				-- StarterGui.mainUI.mainframe.navigation.ContentContainer.Label
 				Label["5e"] = Instance.new("Frame", Tab["1f"]);
-				Label["5e"]["BackgroundColor3"] = options.Color;
+				Label["5e"]["BackgroundColor3"] = Color3.fromRGB(235, 196, 0);
 				Label["5e"]["Size"] = UDim2.new(1, 0, 0, 30);
 				Label["5e"]["Name"] = [[Label]];
 
 				-- StarterGui.mainUI.mainframe.navigation.ContentContainer.Label.icon
 				Label["5f"] = Instance.new("ImageLabel", Label["5e"]);
 				Label["5f"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-				Label["5f"]["ImageColor3"] = Library:darken(options.Color, 46);
+				Label["5f"]["ImageColor3"] = Color3.fromRGB(180, 156, 0);
 				Label["5f"]["Image"] = [[rbxassetid://11357756959]];
 				Label["5f"]["Size"] = UDim2.new(0, 20, 0, 20);
 				Label["5f"]["Name"] = [[icon]];
