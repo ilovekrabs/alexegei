@@ -10,6 +10,8 @@ for i, v in pairs(game.CoreGui:GetChildren()) do
    end
 end
 
+wait(1)
+
 --: Services
 
 local players = game:GetService("Players")
