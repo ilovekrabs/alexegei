@@ -104,7 +104,7 @@ function Library:New(options)
 		-- StarterGui.mainUI.mainframe.topbar
 		GUI["3"] = Instance.new("Frame", GUI["2"]);
 		GUI["3"]["ZIndex"] = 2;
-		GUI["3"]["BackgroundColor3"] = Color3.fromRGB(54, 54, 54);
+		GUI["3"]["BackgroundColor3"] = Color3.fromRGB(44, 44, 44);
 		GUI["3"]["Size"] = UDim2.new(1, 0, 0, 35);
 		GUI["3"]["Name"] = [[topbar]];
 
