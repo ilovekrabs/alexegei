@@ -73,7 +73,10 @@ function Library:New(options)
 		GUI["2"]["ClipsDescendants"] = true;
 		GUI["2"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 		GUI["2"]["Name"] = [[mainframe]];
-
+		
+		GUI["2UISTROKE"] = Instance.new("UIStroke", GUI["2"]);
+		GUI["2UISTROKE"]["Color"] = Color3.fromRGB(21, 21, 21);
+		
 		-- StarterGui.mainUI.mainframe.UICorner
 		GUI["a"] = Instance.new("UICorner", GUI["2"]);
 		GUI["a"]["CornerRadius"] = UDim.new(0, 6);
