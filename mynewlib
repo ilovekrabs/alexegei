@@ -139,7 +139,7 @@ function Library:New(options)
 		GUI["7"]["TextSize"] = 14;
 		GUI["7"]["TextColor3"] = Color3.fromRGB(235, 196, 0);
 		GUI["7"]["AnchorPoint"] = Vector2.new(0, 0.5);
-		GUI["7"]["Size"] = UDim2.new(0.8, 0, 1, -15);
+		GUI["7"]["Size"] = UDim2.new(1, 0, 1, -15);
 		GUI["7"]["Text"] = options.Title;
 		GUI["7"]["Name"] = [[title]];
 		GUI["7"]["Font"] = Enum.Font.Ubuntu;
