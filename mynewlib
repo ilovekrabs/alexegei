@@ -20,10 +20,8 @@ local uis = game:GetService("UserInputService")
 
 --: Vars
 
-local viewport = workspace.CurrentCamera.ViewportSize
 local tweenInfo = TweenInfo.new(0.2)
 local lp = players.LocalPlayer
-local mouse = lp:GetMouse()
 
 local Library = {}
 
@@ -67,7 +65,7 @@ function Library:New(options)
 
 		-- StarterGui.mainUI.mainframe
 		GUI["2"] = Instance.new("Frame", GUI["1"]);
-		GUI["2"]["BackgroundColor3"] = Color3.fromRGB(41, 41, 41);
+		GUI["2"]["BackgroundColor3"] = Color3.fromRGB( 31, 31, 31);
 		GUI["2"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
 		GUI["2"]["Size"] = UDim2.new(0,0,0,0);
 		GUI["2"]["ClipsDescendants"] = true;
@@ -75,7 +73,7 @@ function Library:New(options)
 		GUI["2"]["Name"] = [[mainframe]];
 		
 		GUI["2UISTROKE"] = Instance.new("UIStroke", GUI["2"]);
-		GUI["2UISTROKE"]["Color"] = Color3.fromRGB(21, 21, 21);
+		GUI["2UISTROKE"]["Color"] = Color3.fromRGB(26, 26, 26);
 		
 		-- StarterGui.mainUI.mainframe.UICorner
 		GUI["a"] = Instance.new("UICorner", GUI["2"]);
