@@ -1220,6 +1220,7 @@ function Library:New(options)
 			end
 			
 			function Toggle:Delete()
+				Toggle:ChangeState(false)
 				Toggle["2a"]:Destroy()
 			end
 			
