@@ -1219,11 +1219,6 @@ function Library:New(options)
 				options.Callback(Toggle.State)
 			end
 			
-			function Toggle:Delete()
-				Toggle:ChangeState(false)
-				Toggle["2a"]:Destroy()
-			end
-			
 			--: Logic
 			do 
 				Toggle["2a"].MouseEnter:Connect(function()
