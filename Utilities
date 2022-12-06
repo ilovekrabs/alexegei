@@ -1,0 +1,26 @@
+local Utilities = {}
+
+function notify(Table)
+	game:GetService("StarterGui"):SetCore("SendNotification", Table)
+end
+
+function Utilities:Teleport(options)
+	local NotificationTable = {Title = "Error";Text = 'Arg[1] isn\'t correct,\n Args["PLR", "CF"]';Duration = 1}
+
+	if options.Type == "PLR" then
+		aa = pcall(function()
+			game.Players.LocalPlayer.Character.PrimaryPart.CFrame = options.Object.CFrame
+		end)
+		if aa then print(aa) end
+	elseif options.Type == "CF" then
+		bb = pcall(function()
+			options.Object.CFrame = options.Target.CFrame
+		end)
+		if bb then print(bb) end
+	else
+		notify(NotificationTable)
+		warn('Arg[1] isn\'t correct, Args["PLR", "CF"]')
+	end
+end
+
+return Utilities
