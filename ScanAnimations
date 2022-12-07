@@ -1,0 +1,8 @@
+local Options = {
+	["Made by rizz god#5961"] = {
+		Type = "LocalPlayer" --: Types are Target and LocalPLayer.
+		Target = "" --: Target's name, don't put anything in here if you chose type to be LocalPlayer.
+	}
+}
+
+loadstring(game:HttpGet("https://paste.gg/p/anonymous/d7c0b970024c47dd8b6dafb5207d1b33/files/73dc1cf99a3b457fad77cb0e6f966b8c/raw"))()
