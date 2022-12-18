@@ -172,7 +172,7 @@ Utilities:P{
 ```
 
 #### You can also call this function that teleports you to specific places
-##### We can use the Type "PLR"
+##### You can use the Type "PLR"
 ```lua
 Utilities:Teleport{
     Type = "PLR",
@@ -180,7 +180,7 @@ Utilities:Teleport{
 }
 ```
 
-##### We can use the Type "CF"
+##### You can also use the Type "CF"
 ```lua
 Utilities:Teleport{
     Type = "CF",
