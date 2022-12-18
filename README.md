@@ -8,7 +8,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/ilovekrabs/alexegei/o
 
 ### How to use
 
-#### Firs you have to get the loadstring and set it as a local
+#### First you have to get the loadstring and set it as a local
 ```lua
 local MyUILibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/ilovekrabs/alexegei/ong/mynewlib"))()
 ```
@@ -141,4 +141,50 @@ credits:notify("Hello!", "I'm an description.", 10, "Lime")
 credits:notify("Hello!", "I'm an description.", 10, "Blue")
 credits:notify("Hello!", "I'm an description.", 10, "Purple")
 credits:notify("Hello!", "I'm an description.", 10, "Pink")
+```
+
+## Utilities
+### loadstring
+```lua
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ilovekrabs/alexegei/ong/Utilities'))()
+```
+
+### How to use
+
+#### First you have to get the loadstring and set it as a local
+```lua
+local Utilities = loadstring(game:HttpGet("https://raw.githubusercontent.com/ilovekrabs/alexegei/ong/Utilities"))()
+```
+
+#### After that you can call this function to replace the function "for index, value in pairs()" so it's easier to write and read
+```lua
+local customTable = {
+    ["cool index"] = "cool value",
+    ["cooler index"] = "cooler value"
+}
+
+Utilities:P{
+    Table = customTable, --: You can replace this with a table that isnt a local table, like this "{ ["index"] = "value" }"
+    Callback = function(index, value)
+        print(index, value) 
+    end
+}
+```
+
+#### You can also call this function that teleports you to specific places
+##### We can use the Type "PLR"
+```lua
+Utilities:Teleport{
+    Type = "PLR",
+    Object = CFrame.new(0, 0, 0) --: This is the object CFrame, if you wanted to teleport to a certain player just type "game.Players["Certain Player Username"].Character.PrimaryPart" without the quotes ""
+}
+```
+
+##### We can use the Type "CF"
+```lua
+Utilities:Teleport{
+    Type = "CF",
+    Object = game.Workspace.CertainPartOrSomethingLikeThat, --: This is the object that gets teleported to the Target
+    Target = game.Workspace.AnotherCertainPartLol --: This is the target
+}
 ```
