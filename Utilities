@@ -23,4 +23,12 @@ function Utilities:Teleport(options)
 	end
 end
 
+function Utilities:P(options)
+    local Table, callback = options.Table, options.Callback
+    
+    for i, v in pairs(Table) do
+        callback(i, v)
+    end
+end
+
 return Utilities
